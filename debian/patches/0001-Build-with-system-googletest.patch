@@ -1,0 +1,37 @@
+From: Shengjing Zhu <zhsj@debian.org>
+Date: Mon, 14 Dec 2020 16:32:05 +0800
+Subject: Build with system googletest
+
+Forwarded: not-needed
+---
+ test/CMakeLists.txt | 16 ++++++++++++++--
+ 1 file changed, 14 insertions(+), 2 deletions(-)
+
+diff --git a/test/CMakeLists.txt b/test/CMakeLists.txt
+index 7ae5659..a52db94 100644
+--- a/test/CMakeLists.txt
++++ b/test/CMakeLists.txt
+@@ -6,9 +6,21 @@
+ # pre-compiled copy of Google Test (for example, into /usr/local)?"
+ # at http://code.google.com/p/googletest/wiki/FAQ for more details.
+ add_library(gmock STATIC
+-  gmock-gtest-all.cc gmock/gmock.h gtest/gtest.h gtest/gtest-spi.h)
++ /usr/src/googletest/googlemock/src/gmock-all.cc
++ /usr/src/googletest/googletest/src/gtest-all.cc
++ /usr/src/googletest/googlemock/include/gmock/gmock.h
++ /usr/src/googletest/googletest/include/gtest/gtest.h
++ /usr/src/googletest/googletest/include/gtest/gtest-spi.h
++)
+ target_compile_definitions(gmock PUBLIC GTEST_HAS_STD_WSTRING=1)
+-target_include_directories(gmock SYSTEM PUBLIC . gmock gtest)
++target_include_directories(gmock SYSTEM PUBLIC .
++ /usr/src/googletest/googletest
++ /usr/src/googletest/googletest/include
++ /usr/src/googletest/googletest/include/gtest
++ /usr/src/googletest/googlemock
++ /usr/src/googletest/googlemock/include
++ /usr/src/googletest/googlemock/include/gmock
++)
+ 
+ find_package(Threads)
+ if (Threads_FOUND)
