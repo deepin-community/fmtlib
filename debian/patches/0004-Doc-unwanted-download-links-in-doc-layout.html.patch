@@ -2,6 +2,7 @@ From: "Eugene V. Lyubimkin" <jackyf@iki.fi>
 Date: Sat, 7 Nov 2015 19:53:09 +0100
 Subject: Doc: unwanted download links in doc layout.html
 
+Forwarded: not-needed
 ---
  doc/_templates/layout.html | 27 ---------------------------
  1 file changed, 27 deletions(-)
