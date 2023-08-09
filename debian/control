@@ -15,7 +15,7 @@ Build-Depends-Indep:
  python3-breathe,
  python3-sphinx,
 Rules-Requires-Root: no
-Standards-Version: 4.5.1
+Standards-Version: 4.6.1
 Homepage: https://fmt.dev/
 Vcs-Browser: https://salsa.debian.org/zhsj/fmtlib
 Vcs-Git: https://salsa.debian.org/zhsj/fmtlib.git
@@ -25,13 +25,13 @@ Section: libdevel
 Architecture: any
 Multi-Arch: same
 Depends:
- libfmt7 (= ${binary:Version}),
+ libfmt9 (= ${binary:Version}),
  ${misc:Depends},
  ${shlibs:Depends},
 Suggests:
  libfmt-doc,
 Breaks:
- libspdlog1 (<< 1:1.8.1+ds-2.1),
+ libspdlog-dev (<< 1:1.9.2+ds-0.1),
 Conflicts:
  libcppformat1-dev,
  libcppformat2-dev,
@@ -62,7 +62,7 @@ Description: fast type-safe C++ formatting library -- documentation
  .
  This package contains the documentation files.
 
-Package: libfmt7
+Package: libfmt9
 Section: libs
 Architecture: any
 Multi-Arch: same
