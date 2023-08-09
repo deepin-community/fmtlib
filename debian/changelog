@@ -1,9 +1,108 @@
-fmtlib (7.1.3+ds1-6) unstable; urgency=medium
+fmtlib (9.1.0+ds1-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Shengjing Zhu <zhsj@debian.org>  Mon, 29 Aug 2022 20:43:55 +0800
+
+fmtlib (9.1.0+ds1-1) experimental; urgency=medium
+
+  * New upstream version 9.1.0+ds1
+
+ -- Shengjing Zhu <zhsj@debian.org>  Sun, 28 Aug 2022 00:39:05 +0800
+
+fmtlib (9.0.0+ds1-4) unstable; urgency=medium
+
+  * Upload to unstable
+  * Update Standards-Version to 4.6.1 (no changes)
+
+ -- Shengjing Zhu <zhsj@debian.org>  Fri, 19 Aug 2022 10:52:23 +0800
+
+fmtlib (9.0.0+ds1-3) experimental; urgency=medium
+
+  * Backport patch for failed chrono test on i386
+
+ -- Shengjing Zhu <zhsj@debian.org>  Thu, 14 Jul 2022 03:51:10 +0800
+
+fmtlib (9.0.0+ds1-2) experimental; urgency=medium
+
+  * Backport patch to fix failure on i386
+
+ -- Shengjing Zhu <zhsj@debian.org>  Mon, 11 Jul 2022 03:01:31 +0800
+
+fmtlib (9.0.0+ds1-1) experimental; urgency=medium
+
+  * New upstream version 9.0.0+ds1
+  * Bump SO version to 9
+
+ -- Shengjing Zhu <zhsj@debian.org>  Tue, 05 Jul 2022 23:55:12 +0800
+
+fmtlib (8.1.1+ds1-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Shengjing Zhu <zhsj@debian.org>  Thu, 20 Jan 2022 02:07:51 +0800
+
+fmtlib (8.1.1+ds1-1) experimental; urgency=medium
+
+  * New upstream version 8.1.1+ds1
+
+ -- Shengjing Zhu <zhsj@debian.org>  Fri, 07 Jan 2022 09:29:32 +0800
+
+fmtlib (8.1.0+ds1-3) experimental; urgency=medium
+
+  * Backport patch to restore ABI compatibility.
+    Previous patch is incomplete
+
+ -- Shengjing Zhu <zhsj@debian.org>  Thu, 06 Jan 2022 00:35:43 +0800
+
+fmtlib (8.1.0+ds1-2) experimental; urgency=medium
+
+  * Update doxygen conf
+  * Backport patches
+    + PR-2696: Restore FMT_API on error_handler::on_error()
+    + PR-2699: Fix endianness bug in write_digit2_separated
+
+ -- Shengjing Zhu <zhsj@debian.org>  Wed, 05 Jan 2022 02:51:30 +0800
+
+fmtlib (8.1.0+ds1-1) experimental; urgency=medium
+
+  * New upstream version 8.1.0+ds1
+
+ -- Shengjing Zhu <zhsj@debian.org>  Mon, 03 Jan 2022 16:41:54 +0800
+
+fmtlib (8.0.1+ds1-4) unstable; urgency=medium
+
+  * Upload to unstable.
+  * Update Standards-Version to 4.6.0 (no changes)
+
+ -- Shengjing Zhu <zhsj@debian.org>  Fri, 17 Dec 2021 22:41:44 +0800
+
+fmtlib (8.0.1+ds1-3) experimental; urgency=medium
+
+  * Breaks libspdlog-dev << 1:1.9.2+ds-0.1
+
+ -- Shengjing Zhu <zhsj@debian.org>  Sat, 11 Dec 2021 22:23:54 +0800
+
+fmtlib (8.0.1+ds1-2) experimental; urgency=medium
 
   * Fix FTBFS with dh_sphinxdoc (Closes: #997437)
     dh_sphinxdoc: error: DOCUMENTATION_OPTIONS does not define URL_ROOT
 
- -- Shengjing Zhu <zhsj@debian.org>  Sun, 24 Oct 2021 05:34:53 +0800
+ -- Shengjing Zhu <zhsj@debian.org>  Thu, 02 Dec 2021 03:59:56 +0800
+
+fmtlib (8.0.1+ds1-1) experimental; urgency=medium
+
+  * New upstream version 8.0.1+ds1
+  * Set INSTALL_GTEST to OFF to remove extra exported targets
+
+ -- Shengjing Zhu <zhsj@debian.org>  Sat, 03 Jul 2021 18:14:41 +0800
+
+fmtlib (8.0.0+ds1-1) experimental; urgency=medium
+
+  * New upstream version 8.0.0+ds1
+  * Bump SO version to 8
+
+ -- Shengjing Zhu <zhsj@debian.org>  Mon, 21 Jun 2021 22:59:40 +0800
 
 fmtlib (7.1.3+ds1-5) unstable; urgency=medium
 
