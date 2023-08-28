@@ -25,7 +25,7 @@ Section: libdevel
 Architecture: any
 Multi-Arch: same
 Depends:
- libfmt9 (= ${binary:Version}),
+ libfmt10 (= ${binary:Version}),
  ${misc:Depends},
  ${shlibs:Depends},
 Suggests:
@@ -62,7 +62,7 @@ Description: fast type-safe C++ formatting library -- documentation
  .
  This package contains the documentation files.
 
-Package: libfmt9
+Package: libfmt10
 Section: libs
 Architecture: any
 Multi-Arch: same

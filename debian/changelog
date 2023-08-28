@@ -1,3 +1,17 @@
+fmtlib (10.1.0+ds1-1) experimental; urgency=medium
+
+  * New upstream version 10.1.0+ds1
+
+ -- Shengjing Zhu <zhsj@debian.org>  Mon, 14 Aug 2023 18:51:20 +0800
+
+fmtlib (10.0.0+ds1-1) experimental; urgency=medium
+
+  * New upstream version 10.0.0+ds1
+  * Bump SO version to 10
+  * Explicitly set CMAKE_CXX_STANDARD to 11 to fix tests
+
+ -- Shengjing Zhu <zhsj@debian.org>  Wed, 10 May 2023 22:24:04 +0800
+
 fmtlib (9.1.0+ds1-2) unstable; urgency=medium
 
   * Upload to unstable

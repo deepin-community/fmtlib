@@ -8,7 +8,7 @@ Forwarded: not-needed
  1 file changed, 24 deletions(-)
 
 diff --git a/README.rst b/README.rst
-index cc6d7c4..9846cdc 100644
+index 6a639b6..e89f81f 100644
 --- a/README.rst
 +++ b/README.rst
 @@ -1,27 +1,3 @@
