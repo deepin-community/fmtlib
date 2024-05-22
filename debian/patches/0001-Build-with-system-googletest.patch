@@ -8,17 +8,15 @@ Forwarded: not-needed
  1 file changed, 5 insertions(+), 4 deletions(-)
 
 diff --git a/test/CMakeLists.txt b/test/CMakeLists.txt
-index 6f614d1..f1ff9c9 100644
+index 9716378..c24e64a 100644
 --- a/test/CMakeLists.txt
 +++ b/test/CMakeLists.txt
-@@ -1,4 +1,5 @@
+@@ -1,10 +1,11 @@
 -add_subdirectory(gtest)
 +set(INSTALL_GTEST OFF CACHE BOOL "" FORCE)
 +add_subdirectory(/usr/src/googletest/ ${CMAKE_BINARY_DIR}/googletest-build EXCLUDE_FROM_ALL)
  
- include(CheckSymbolExists)
- 
-@@ -6,7 +7,7 @@ set(TEST_MAIN_SRC test-main.cc gtest-extra.cc gtest-extra.h util.cc)
+ set(TEST_MAIN_SRC test-main.cc gtest-extra.cc gtest-extra.h util.cc)
  add_library(test-main STATIC ${TEST_MAIN_SRC})
  target_include_directories(test-main PUBLIC
    $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>)
@@ -27,7 +25,7 @@ index 6f614d1..f1ff9c9 100644
  
  function(add_fmt_executable name)
    add_executable(${name} ${ARGN})
-@@ -32,7 +33,7 @@ function(add_fmt_test name)
+@@ -30,7 +31,7 @@ function(add_fmt_test name)
    set(sources ${name}.cc ${ADD_FMT_TEST_UNPARSED_ARGUMENTS})
    if (ADD_FMT_TEST_HEADER_ONLY)
      set(sources ${sources} ${TEST_MAIN_SRC} ../src/os.cc)
@@ -36,7 +34,7 @@ index 6f614d1..f1ff9c9 100644
      if (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
        set(PEDANTIC_COMPILE_FLAGS ${PEDANTIC_COMPILE_FLAGS} -Wno-weak-vtables)
      endif ()
-@@ -142,7 +143,7 @@ if (NOT MSVC_STATIC_RUNTIME)
+@@ -130,7 +131,7 @@ if (NOT MSVC_STATIC_RUNTIME)
      posix-mock-test.cc ../src/format.cc ${TEST_MAIN_SRC})
    target_include_directories(
      posix-mock-test PRIVATE ${PROJECT_SOURCE_DIR}/include)
