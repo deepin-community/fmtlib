@@ -1,3 +1,9 @@
+fmtlib (11.0.0+ds1-1) experimental; urgency=medium
+
+  * Update version to 11.0.0+ds1-1(No code changes!)
+
+ -- hudeng <hudeng@deepin.com>  Tue, 02 Jul 2024 17:09:13 +0800
+
 fmtlib (10.1.0+ds1-1) experimental; urgency=medium
 
   * New upstream version 10.1.0+ds1
