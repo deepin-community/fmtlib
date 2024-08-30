@@ -1,3 +1,15 @@
+fmtlib (10.1.1+ds1-2) experimental; urgency=medium
+
+  * Fix build with Sphinx 7 (Closes: #1042588)
+
+ -- Shengjing Zhu <zhsj@debian.org>  Wed, 22 Nov 2023 04:18:37 +0800
+
+fmtlib (10.1.1+ds1-1) experimental; urgency=medium
+
+  * New upstream version 10.1.1+ds1
+
+ -- Shengjing Zhu <zhsj@debian.org>  Fri, 08 Sep 2023 14:47:55 +0800
+
 fmtlib (10.1.0+ds1-1) experimental; urgency=medium
 
   * New upstream version 10.1.0+ds1
