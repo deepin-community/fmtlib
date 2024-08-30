@@ -4,14 +4,14 @@ Subject: Privacy: README.rst
 
 Forwarded: not-needed
 ---
- README.rst | 24 ------------------------
- 1 file changed, 24 deletions(-)
+ README.rst | 27 ---------------------------
+ 1 file changed, 27 deletions(-)
 
 diff --git a/README.rst b/README.rst
-index 6a639b6..e89f81f 100644
+index 44bb686..3f04146 100644
 --- a/README.rst
 +++ b/README.rst
-@@ -1,27 +1,3 @@
+@@ -1,30 +1,3 @@
 -.. image:: https://user-images.githubusercontent.com/
 -           576385/156254208-f5b743a9-88cf-439d-b0c0-923d53e8d551.png
 -   :width: 25%
@@ -35,6 +35,9 @@ index 6a639b6..e89f81f 100644
 -.. image:: https://img.shields.io/badge/stackoverflow-fmt-blue.svg
 -   :alt: Ask questions at StackOverflow with the tag fmt
 -   :target: https://stackoverflow.com/questions/tagged/fmt
+-
+-.. image:: https://api.securityscorecards.dev/projects/github.com/fmtlib/fmt/badge
+-   :target: https://securityscorecards.dev/viewer/?uri=github.com/fmtlib/fmt
 -
  **{fmt}** is an open-source formatting library providing a fast and safe
  alternative to C stdio and C++ iostreams.

@@ -1,0 +1,29 @@
+From: Shengjing Zhu <zhsj@debian.org>
+Date: Wed, 22 Nov 2023 04:17:40 +0800
+Subject: Doc: build with Sphinx 7
+
+---
+ doc/basic-bootstrap/layout.html | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/doc/basic-bootstrap/layout.html b/doc/basic-bootstrap/layout.html
+index 5519c4b..a6e7914 100644
+--- a/doc/basic-bootstrap/layout.html
++++ b/doc/basic-bootstrap/layout.html
+@@ -102,14 +102,14 @@
+ {%- endmacro %}
+ 
+ {%- macro css() %}
+-    <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
++    <link rel="stylesheet" href="{{ pathto('_static/' + styles[-1], 1) }}" type="text/css" />
+     <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
+     {%- for cssfile in css_files %}
+     <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
+     {%- endfor %}
+ {%- endmacro %}
+ 
+-<html lang="en">
++<html lang="en" data-content_root="{{ content_root }}">
+   <head>
+     <meta charset="{{ encoding }}">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
