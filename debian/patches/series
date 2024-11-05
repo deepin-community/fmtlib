@@ -4,3 +4,4 @@
 0004-Doc-unwanted-download-links-in-doc-layout.html.patch
 0005-Doc-unwanted-GitHub-iframe.patch
 0006-Doc-build-with-Sphinx-7.patch
+0007-Fix-handling-of-static-separator.patch

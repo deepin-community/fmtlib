@@ -1,3 +1,16 @@
+fmtlib (10.1.1+ds1-4) unstable; urgency=medium
+
+  * Backport patch to fix handling FMT_STATIC_THOUSANDS_SEPARATOR
+    (Closes: #1086722)
+
+ -- Shengjing Zhu <zhsj@debian.org>  Tue, 05 Nov 2024 02:46:03 +0800
+
+fmtlib (10.1.1+ds1-3) unstable; urgency=medium
+
+  * Upload to unstable (Closes: #1072674)
+
+ -- Shengjing Zhu <zhsj@debian.org>  Mon, 04 Nov 2024 17:39:56 +0800
+
 fmtlib (10.1.1+ds1-2) experimental; urgency=medium
 
   * Fix build with Sphinx 7 (Closes: #1042588)
