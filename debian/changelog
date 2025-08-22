@@ -1,3 +1,9 @@
+fmtlib (10.1.1+ds1-4deepin1) unstable; urgency=medium
+
+  * gcc-12 rebuild.
+
+ -- lichenggang <lichenggang@deepin.org>  Fri, 22 Aug 2025 15:47:48 +0800
+
 fmtlib (10.1.1+ds1-4) unstable; urgency=medium
 
   * Backport patch to fix handling FMT_STATIC_THOUSANDS_SEPARATOR
