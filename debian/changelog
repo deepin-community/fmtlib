@@ -1,3 +1,9 @@
+fmtlib (10.1.1+ds1-4deepin2) unstable; urgency=medium
+
+  * Rebuild with LTO enabled (dpkg vendor feature optimize/lto).
+
+ -- tunaichao <tunaichao@uniontech.com>  Fri, 11 Sep 2026 14:36:50 +0800
+
 fmtlib (10.1.1+ds1-4deepin1) unstable; urgency=medium
 
   * gcc-12 rebuild.
